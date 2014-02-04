@@ -9,7 +9,7 @@ description:
   For more information, consult the glibc documentation:
   <http://www.gnu.org/software/libc/manual/html_node/strfry.html>
   .
-  Both @String@ and @ByteString@ interfaces are offered, as well as
+  @String@, @ByteString@, and @Text@ interfaces are offered, as well as
   the raw FFI binding.
 homepage:            https://github.com/ehird/acme-strfry
 license:             BSD3
@@ -30,6 +30,7 @@ library
     Acme.Strfry,
     Acme.Strfry.String,
     Acme.Strfry.ByteString,
+    Acme.Strfry.Text,
     Acme.Strfry.Foreign
-  build-depends: base == 4.*, bytestring == 0.9.*
+  build-depends: base == 4.*, bytestring == 0.9.*, text == 0.11.*
   ghc-options: -Wall
